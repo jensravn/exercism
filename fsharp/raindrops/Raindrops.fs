@@ -6,11 +6,11 @@ let convert n =
         then Some t
         else None
 
-    let TextsOrInputNumber = function
+    let textsOrInputNumber = function
         | [] -> n.ToString()
         | xs -> String.concat "" xs
 
     [(3, "Pling"); (5, "Plang"); (7, "Plong")]
     |> List.map numberToText
     |> List.choose id
-    |> TextsOrInputNumber
+    |> textsOrInputNumber
