@@ -11,10 +11,7 @@ let grade (number: int) (school: School): string list =
     |> List.sort
 
 let add (student: string) (gradeN: int) (school: School): School =
-    gradeN
-    |> Map.add
-    |> (student::(grade gradeN school))
-    |> school
+    Map.add gradeN (student::(grade gradeN school)) school
 
 let roster (school: School): (int * string list) list =
     school
