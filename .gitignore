@@ -5,3 +5,6 @@
 **/obj/
 
 **/node_modules/
+
+.exercism
+HELP.md
